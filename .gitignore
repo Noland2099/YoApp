@@ -35,6 +35,8 @@ local.properties
 # node.js
 #
 node_modules/
+electron/_expo/*
+electron/assets/*
 npm-debug.log
 yarn-error.log
 

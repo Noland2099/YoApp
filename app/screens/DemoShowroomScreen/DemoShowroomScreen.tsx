@@ -126,6 +126,9 @@ export const DemoShowroomScreen: FC<DemoTabScreenProps<"DemoShowroom">> =
           } catch (err) {
             console.error(err)
           }
+          if(findItemIndex === -1){
+            findItemIndex = 0
+          }
         }
         handleScroll(findSectionIndex, findItemIndex)
       }

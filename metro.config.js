@@ -13,6 +13,11 @@ config.transformer.getTransformOptions = async () => ({
     // Read more here: https://reactnative.dev/docs/optimizing-javascript-loading
     // And here: https://github.com/expo/expo/issues/27279#issuecomment-1971610698
     inlineRequires: true,
+    // experimentalImportSupport: true,
+  },
+  compress: {
+    // The option below removes all console logs statements in production.
+    drop_console: true,
   },
 })
 

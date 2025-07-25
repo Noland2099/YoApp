@@ -1,4 +1,4 @@
-# Welcome to  YoApp!
+# Welcome to YoApp
 
 > The latest and greatest boilerplate for Infinite Red opinions
 

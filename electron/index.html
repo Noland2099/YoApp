@@ -1,50 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <title>PizzaApp</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
 
-<head>
-  <meta charset="utf-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <title>PizzaApp</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-    }
+            body {
+                overflow: hidden;
+            }
 
-    body {
-      overflow: hidden;
-    }
+            #root {
+                display: flex;
+                height: 100%;
+                flex: 1;
+            }
+        </style>
+        <link rel="shortcut icon" href="/favicon.ico" />
+    </head>
 
-    #root {
-      display: flex;
-      height: 100%;
-      flex: 1;
-    }
-  </style>
-<link rel="shortcut icon" href="/favicon.ico" /></head>
-
-<body>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <div id="root"></div>
-  <script type="text/javascript" charset="utf-8">
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js').then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      }).catch(error => {
-        console.error('Service Worker registration failed:', error);
-      });
-    });
-  }
-  </script>
-  <script type="module" src="/src/renderer.js" async defer></script>
-<script src="/_expo/static/js/web/index-3e8c77a0da5987352c1596eb60cfc9ef.js" defer></script>
-</body>
-
+    <body>
+        <noscript> You need to enable JavaScript to run this app. </noscript>
+        <div id="root"></div>
+        <script type="text/javascript" charset="utf-8">
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("/sw.js")
+                        .then((registration) => {
+                            console.log("Service Worker registered with scope:", registration.scope);
+                        })
+                        .catch((error) => {
+                            console.error("Service Worker registration failed:", error);
+                        });
+                });
+            }
+        </script>
+        <script type="module" src="/src/renderer.js" async defer></script>
+        <script src="/_expo/static/js/web/index-3e8c77a0da5987352c1596eb60cfc9ef.js" defer></script>
+    </body>
 </html>

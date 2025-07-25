@@ -20,8 +20,12 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"],
-      "assets/*": ["./assets/*"]
+      "@/*": [
+        "./app/*"
+      ],
+      "assets/*": [
+        "./assets/*"
+      ]
     },
     "typeRoots": [
       "./node_modules/@types",
